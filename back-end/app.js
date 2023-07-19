@@ -2,10 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
+const apiKey = require('./config');
+
 // const stuffRoutes = require('./routes/stuff');
 const userRoutes = require('./routes/user');
 
-mongoose.connect('mongodb+srv://mathys35000:7eirUP3MPMM5oCD6@cluster0.kohmvuz.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect( apiKey,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
