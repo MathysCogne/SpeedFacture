@@ -1,0 +1,14 @@
+.SignIn{
+   form{
+      display: flex;
+   }
+   .SignIn__cont{
+      display: flex;
+      flex-direction: row;
+      column-gap: 25px;
+      div{
+         display: flex;
+         flex-direction: column;
+      }
+   }
+}

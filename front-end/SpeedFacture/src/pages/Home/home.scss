@@ -5,31 +5,21 @@
    justify-content: center;
    align-items: center;
    height: 80vh;
-   // background-image: url('../../assets/img/background.jpg');
-   // background-color: $color-secondary;
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
 }
 .card__home{
+   background-color: rgba(255, 208, 0, 0.90);
+
    display: flex;
    flex-direction: column;
    justify-content: center;
-   width: 70%;
+
+   width: 60%;
    margin: 0 auto;
 
-   padding: 10px;
+   padding: 100px;
+   border-radius: 25px;
+   h2{
+      font-size: 2.5rem;
+      margin: 50px 0;
+   }
 }
-
-.card__home::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(255, 0, 0, 0.5); /* Couleur semi-transparente pour ajouter un voile */
-   backdrop-filter: blur(5px); /* Ajustez la valeur de flou (blur) selon vos préférences */
-   z-index: -1; /* Placez la pseudo-classe en arrière-plan du contenu de la carte */
- }

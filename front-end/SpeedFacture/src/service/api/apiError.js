@@ -1,4 +1,4 @@
-const handleApiError = (error) => {
+export const handleApiError = (error) => {
    if (error.response) {
       console.error('Erreur de réponse:', error.response.status);
       console.error(error.response.data);
@@ -12,5 +12,3 @@ const handleApiError = (error) => {
       throw new Error('Une erreur s\'est produite lors de la configuration de la requête.');
    }
 };
-
-export default handleApiError;

@@ -1,18 +1,18 @@
 import { NavLink } from 'react-router-dom';
 import './header.scss'
 
+import User from '../../components/User/User'
+
 function Header() {
    return (
       <header>
-         <h1><NavLink to="/">Speed Facture</NavLink></h1>
-         
-         <nav>
-            <ul>
-               <NavLink to="/Login"><li>Login</li></NavLink>
-               <NavLink to="/Login"><li className='SignIn'>Sign In</li></NavLink>
-            </ul>
-         </nav>
-
+         <div className='header__cont'>
+            <h1><NavLink to="/">Speed Facture</NavLink></h1>
+            
+            <nav>
+               < User />
+            </nav>
+         </div>
       </header>
    )
 }

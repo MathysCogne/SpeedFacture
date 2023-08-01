@@ -8,6 +8,7 @@ import Footer from "./layouts/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Login from "./pages/Login/Login";
+import Signin from "./pages/SignIn/Signin";
 import Error from "./pages/Error/Error";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signin" element={<Signin />} />
 
         <Route path="/dashboard" element={<Dashboard />}>
           {/* <Route path="profile" element={<Profile />} />

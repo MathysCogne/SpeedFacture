@@ -35,7 +35,7 @@ exports.login = (req, res, next) => {
                   token: jwt.sign( // on renvoie un token d'authentification à l'utilisateur avec jsonwebtoken. Ce token contient l'ID de l'utilisateur en tant que payload (les données encodées dans le token) et utilise une chaîne secrète de développement temporaire RANDOM_TOKEN_SECRET pour encoder notre token (à remplacer par une chaîne aléatoire beaucoup plus longue pour la production)
                      { userId: user._id },
                      'RANDOM_TOKEN_SECRET', // à remplacer par une chaîne aléatoire beaucoup plus longue pour la production comme par exemple une variable d'environnement (process.env.TOKEN) pour ne pas laisser la chaîne en clair dans le code source de l'application (et donc dans le gestionnaire de version) 
-                     { expiresIn: '24h' }
+                     { expiresIn: '12h' }
                   ),
                   username: user.username,
                   telephone: user.telephone,
