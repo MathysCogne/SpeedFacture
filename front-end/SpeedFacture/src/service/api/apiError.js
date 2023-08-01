@@ -1,6 +1,8 @@
 const handleApiError = (error) => {
    if (error.response) {
       console.error('Erreur de réponse:', error.response.status);
+      console.error(error.response.data);
+      console.error(error.response.headers);
       throw new Error('Une erreur de réponse s\'est produite.');
    } else if (error.request) {
       console.error('Pas de réponse reçue:', error.request);

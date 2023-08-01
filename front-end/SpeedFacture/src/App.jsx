@@ -16,9 +16,8 @@ function App() {
       <Header />
 
       <Routes>
-
         <Route path="/" element={<Home />} />
-        <Route exact path="/login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
 
         <Route path="/dashboard" element={<Dashboard />}>
           {/* <Route path="profile" element={<Profile />} />
@@ -27,7 +26,7 @@ function App() {
   
         <Route path="*" element={<Error />} />
       </Routes>
-
+      
       <Footer />
     </>
   )

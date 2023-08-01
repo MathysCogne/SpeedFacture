@@ -1,3 +1,41 @@
+@import 'variables';
 body{
-   background-color: red;
+   background-color: $color-background;
 } 
+
+// Définition des fonts family et des tailles/couleurs de police 
+// --------------------------------------------------
+h1, h2, h3, h4, h5, h6, a, p, span, div, ul, li, ol, figcaption, input, textarea, button, label{
+   color: $color-primary;
+}
+h3, h4, h5, h6, p, span, div, ul, li, ol, figcaption, input, textarea, button, label{
+   font-family: $font-family-primary;
+}
+h1, h2 {
+   font-family: $font-family-primary;
+}
+
+h1{
+   font-size: $font-size-logo;
+   @media screen and (max-width: $media-query) {
+      font-size: $font-size-logo_mobile;
+   }
+}
+h2{
+   font-size: $font-size-title;
+   @media screen and (max-width: $media-query) {
+      font-size: $font-size-title_mobile;
+   }
+}
+h3{
+   font-size: $font-size-subtitle;
+   @media screen and (max-width: $media-query) {
+      font-size: $font-size-subtitle_mobile;
+   }
+}
+h4, h5, h6, p, span, div, ul, li, ol, figcaption, input, textarea, button, label{
+   font-size: $font-size-text;
+   @media screen and (max-width: $media-query) {
+      font-size: $font-size-text_mobile;
+   }
+}

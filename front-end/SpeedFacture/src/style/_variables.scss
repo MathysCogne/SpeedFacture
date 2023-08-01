@@ -1,0 +1,41 @@
+// Variables
+// --------------------------------------------------
+// Containers
+$container-width-desktop: 85%;
+$container-width-mobile: 95%;
+
+$section-min-height: 100vh;
+
+// Colors
+$color-primary: #000000;
+$color-secondary: #ffd000;
+$color-tertiary: #ff8f00;
+
+$color-text: #000000;
+$color-text-light: #ffffff;
+$color-text-error: #ff0000;
+
+$color-background: #ffffff;
+
+// Fonts
+$font-family-primary: 'Comfortaa', cursive;
+$font-family-secondary: 'Roboto', sans-serif;
+
+$font-size-logo: 3vw;
+$font-size-title: 4vw;
+$font-size-subtitle: 3.5vw;
+$font-size-text: 18px;
+
+$font-size-logo_mobile: 2.5vw;
+$font-size-title_mobile: 7vw;
+$font-size-subtitle_mobile: 5vw;
+$font-size-text_mobile: 20px;
+
+// Animation & Transition
+$transition-primary: all 0.3s ease-in-out;
+$transition-secondary: all 0.2s ease-in-out;
+
+$animation-time-loader: 3s;
+
+// Media Queries
+$media-query: 750px;
